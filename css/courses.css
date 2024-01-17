@@ -1,0 +1,194 @@
+
+.coursess{
+    margin-top: 1rem;
+}
+.courses__container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    
+}
+
+.course {
+    background: var(--color-bg1);
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.course:hover{
+    background: transparent;
+    border-color: var(--color-primary);
+}
+
+.course__info{
+    padding: 2rem;
+}
+
+.course__info p{
+    margin: 1.2rem 0 2rem;
+    font-size: 0.9rem;
+}
+
+body{
+    padding-top: 5rem;
+}
+.nd_nav{
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+}
+
+.nd_nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-family: Arial, sans-serif;
+    background-color: #444;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.nd_nav a:hover {
+    background-color: #77DD77;
+}
+
+.nd_container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    background-color: #030;
+    color: #fff;
+    padding: 10px;
+}
+
+h1{
+    text-align: center;
+    padding: 10px;
+}
+
+.second-page {
+    opacity: 0;
+    display: none;
+    text-align: center;
+    transition: opacity 0.3s ease-in-out;
+    background-color: #030; /* Set the background color for all second pages */
+}
+
+.active-link {
+    font-weight: bold;
+}
+
+.nd_nav a {
+    background-color: #444;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.second-page ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    font-family: 'Courier New', monospace;
+}
+
+.second-page ul li {
+    margin: 10px 0;
+}
+
+.a{
+    color: black;
+}
+
+.sub2{
+    background-color: var(--color-primary);
+}
+
+.subject{
+    position: relative;
+    top: 5rem;
+    overflow: hidden;
+    height: 70vh;
+    margin-bottom: 5rem;
+}
+
+.sub__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+}
+
+.sub__right{
+    width: 560px;    
+    height: 315px;
+}
+
+.sub__left p{
+    margin: 1rem 0 2.4rem;
+}
+
+.sub__right-video{
+    max-width: 560px;
+    max-height: 315px;
+
+}
+
+.video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: 50% 50%;
+}
+
+@media screen and (max-width: 1024px) {
+ .sub__container{   
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin-top: 0;
+ }
+
+ .sub__right{
+    width: auto;    
+}
+
+.sub__right-video{
+    max-width: 560px;
+    max-height: 315px;
+
+}
+}
+
+@media screen and (max-width:600px) {
+.sub__container{
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin-top: 0;
+}
+.sub__left p{
+    margin-bottom: 1.3rem;
+}
+
+.sub__right{
+    width: 50%;
+    height: 50%;
+}
+
+
+}
